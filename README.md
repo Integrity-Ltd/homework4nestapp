@@ -4,8 +4,15 @@
 
 ## Installation
 
+Make sure you have a PostreSQL server on localhost.
+Make a ```todos``` database.
+
 ```bash
+$ cp example.env .env
+# edit .env file and set database and security enviroment variables
 $ npm install
+$ npx prisma migrate dev --name init
+$ npx prisma generate
 ```
 
 ## Running the app
