@@ -8,4 +8,4 @@ import { PrismaModule } from 'prisma/prisma.module';
   controllers: [TodosController],
   providers: [TodosService],
 })
-export class TodosModule { }
+export class TodosModule {}
